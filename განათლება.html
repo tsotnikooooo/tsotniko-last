@@ -24,6 +24,8 @@
       justify-content: space-between;
       align-items: center;
       padding: 2rem 5%;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
     nav h1 {
@@ -35,6 +37,7 @@
       list-style: none;
       display: flex;
       gap: 2rem;
+      flex-wrap: wrap;
     }
 
     nav ul li {
@@ -109,6 +112,68 @@
       color: #555;
       font-size: 0.9rem;
     }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      nav ul {
+        gap: 1rem;
+      }
+
+      nav {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav h1 {
+        width: 100%;
+        text-align: center;
+      }
+
+      .signin-btn {
+        align-self: center;
+      }
+
+      .content {
+        padding: 5%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav h1 {
+        font-size: 1.5rem;
+      }
+
+      .signin-btn {
+        margin-top: 1rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .edu-item h3 {
+        font-size: 1.1rem;
+      }
+
+      .edu-item p {
+        font-size: 0.9rem;
+      }
+
+      .edu-images {
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .edu-images img {
+        width: 120px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -160,12 +225,9 @@
         <p>ყველაზე დიდი მასწავლები არის იუთბი ადამიანისთვის </p>
       </div>
 
-
       <div class="edu-images">
-        <!-- ფონური ლოგოები -->
-<img src="Youtube_logo.png" alt="Caucasus University" class="bg-decor caucasus">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/CaLogo.jpg" alt="Caucasus University" class="bg-decor caucasus">
-
+        <img src="Youtube_logo.png" alt="Youtube">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/CaLogo.jpg" alt="Caucasus University">
       </div>
     </div>
   </div>
